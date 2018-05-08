@@ -1,5 +1,5 @@
 spring:
-   datasource:
+  datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
@@ -13,3 +13,6 @@ spring:
     password: guest
 env:
   dev
+girl:
+  name: mike
+  age: 20
