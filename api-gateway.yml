@@ -1,0 +1,6 @@
+zuul:
+  routes:
+      product: /myPrudct/**
+      sensitiveHeaders:
+  ignored-patterns:
+       - /**/product/getProductStockById
