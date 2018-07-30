@@ -2,5 +2,6 @@ zuul:
   routes:
       product: /myPrudct/**
       sensitiveHeaders:
+      api-gateway: /gateway/**
   ignored-patterns:
        - /**/product/getProductStockById
