@@ -5,3 +5,11 @@ zuul:
       user: /user/**
   ignored-patterns:
        - /**/product/getProductStockById
+#配置ZUUL网关的超时时间设置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
