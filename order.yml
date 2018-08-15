@@ -11,3 +11,17 @@ spring:
     port: 5672
     username: guest
     password: guest
+#配置全局的触发服务降级的超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+#给单个方法配置全局的触发服务降级的超时时间,getProductStockByIdAndRestemp是方法名称
+    getProductStockByIdAndRestemp:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
