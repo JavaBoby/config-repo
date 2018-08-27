@@ -25,9 +25,5 @@ feign:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
-#开启feign hystrix的支持
-feign:
-  hystrix:
-    enabled: true
 management:
   context-path: /
