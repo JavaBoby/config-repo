@@ -12,13 +12,13 @@ spring:
     username: guest
     password: guest
 #配置全局的触发服务降级的超时时间
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 3000
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
 #给单个方法配置全局的触发服务降级的超时时间,getProductStockByIdAndRestemp是方法名称
     getProductStockByIdAndRestemp:
       execution:
