@@ -6,10 +6,6 @@ zuul:
   ignored-patterns:
        - /**/product/getProductStockById
 #配置ZUUL网关的超时时间设置
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
