@@ -9,3 +9,6 @@ zuul:
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
+girl:
+  name: lili
+  age: 10
