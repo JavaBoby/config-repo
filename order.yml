@@ -27,3 +27,6 @@ feign:
             timeoutInMilliseconds: 3000
 management:
   context-path: /
+girl:
+  name: lili
+  age: 18
