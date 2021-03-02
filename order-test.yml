@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ORDER
+  rabbitmq:
+    host: 10.231.63.137
+    port: 5672
+    username: longtou-sit
+    password: F345Gg6hRMvFHyh9
+    virtual-host: c3-oim-sit  
+server:
+  port: 9090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: orderHostName
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule       
+env: test
